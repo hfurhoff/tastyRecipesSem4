@@ -31,7 +31,7 @@ $(document).ready(function(){
 
                         comment.timestamp = removeQuotes(comment.timestamp);
 
-                        comment.iWroteThisEntry = comment.username === self.commentToAdd.username;
+                        comment.displayDelete = comment.username === self.commentToAdd.username;
                         self.commentsMade.push(comment);
                     }
                     self.getNewComments(self.commentsMade().length);

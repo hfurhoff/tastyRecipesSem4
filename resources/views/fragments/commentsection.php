@@ -21,7 +21,7 @@
                 <p class="comment">
                     <p data-bind="text: comment.commenttext"></p>
                 </p>
-                <!-- ko if: comment.iWroteThisEntry -->
+                <!-- ko if: comment.displayDelete -->
                     <button data-bind="click: $parent.deleteComment">
                         Delete comment
                     </button>
