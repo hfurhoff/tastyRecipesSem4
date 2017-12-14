@@ -1,0 +1,372 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-nov-01, 11:32:48
+    Author     : Coyote
+*/
+
+html{
+    height: 100%;
+}
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    height: 100%;
+    background-color: teal;
+    font-size: 1em;
+}
+section{
+    min-height: 100%;
+    width: 90%;
+    display: inline-block;
+    background-color: #ccffff;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 10em;
+    box-shadow: 0 0 1em black;
+    padding-top: 16em;
+}
+article{
+    width: 100%;
+    height: 100%;
+}
+section h2{
+    margin-bottom: 1em;
+}
+section div{
+    display: inline-block;
+}
+#facts{
+    width: 100%;
+}
+#quickfacts{
+    background-color: yellow;
+    width: 100%;
+    border: black solid thin;
+    font-size: 0.5em;
+}
+#quickfacts td{
+    font-size: 0.9em;
+    text-align: center;
+}
+#ingredientsandoperations{
+    margin-top: 1em;
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;
+}
+#ingredients{
+    height: 100%;
+    width: 100%;
+}
+#pic{
+    height: 100%;
+    width: 100%;
+    display: inline;
+    float: right;
+    box-shadow: 0 0 2em black;
+    margin-top: 1em;
+}
+#ingredientsandoperations table{
+    height: 90%;
+    width: 90%;
+    display: inline-block;
+    background-color: #ffccff;
+    border: black solid thin;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    box-shadow: 0 0 1em black;
+}
+#ingredientsandoperations caption{
+    font-size: 1.2em;
+    font-style: italic;
+}
+#ingredientsandoperations td{
+    padding-right: 2em;
+    padding-top: 1em;
+}
+.type{
+   font-weight: bold;
+}
+.value{
+    font-style: italic;
+}
+#ingredientsandoperations>h3{
+    margin-top: 2em;
+}
+#ingredientsandoperations ol{
+    display: inline-block;
+    width: 90%;
+    margin-top: 1em;
+    padding-top: 1em;
+    background-color: #ffccff;
+    border: black solid thin;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1em;
+    box-shadow: 0 0 1em black;
+}
+#ingredientsandoperations li{
+    margin-top: 1em;
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    margin-top: 0.5em;
+    font-size: 2em;
+}
+p{
+    margin-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#calendar{
+    width: 100%;
+}
+.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday{
+    width: 2em;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    margin-top: 1em;
+    border-bottom: black thin solid;
+    border-top: black thin solid;
+    border-right: black thin solid;
+    background-color: white;
+}
+p.pictureday{
+    width: 100%;
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: left;
+    text-align: left;
+    margin-top: 0px;
+}
+img.pictureday{
+    width: 100%;
+    height: 2em;
+    display: inline;
+}
+div.pictureday{
+    width: 100%;
+}
+#days>div{
+    height: 3.1em;
+}
+.monday{
+    clear: left;
+    border-left: black thin solid;
+}
+#calendar #days{
+    width: 100%;
+}
+h3{
+    margin-bottom: 1em;
+    text-align: left;
+    font-size: 1.2em;
+}
+#commentsection{
+    width: 96%;
+    margin-top: 2em;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #ffccff;
+    border: black solid thin;
+    padding-bottom: 1em;
+    box-shadow: 0 0 1em black;
+}
+#commentsection .postedcomment{
+    display: block;
+    text-align: left;
+    border: black dashed thin;
+    margin-top: 1em;
+}
+.commentauthor, .comment{
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1em;
+}
+.comment{
+    padding-bottom: 1em;
+}
+.commentauthor{
+    text-decoration: underline;
+}
+#commentsection>h3{
+    margin-top: 0.5em;
+}
+body:focus{
+    background-color: teal;
+    border: none;
+}
+*:focus{
+    background-color: fuchsia;
+    border: black dashed thick;
+}
+
+header .active{
+    background-color: yellow;
+    font-style: italic;
+}
+header{
+    top: 0;
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    border-bottom: green solid thick;
+    box-shadow: 0 0.2em 1em black;
+}
+nav{
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+}  
+header ul{
+    height: 100%;
+    display: inline-block;
+    width: 80%;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: green;
+}
+header li{
+    display: inline-block;
+    height: 2em;
+    width: 100%;
+    background-color: lime;
+    border: black solid thin;
+}
+header li a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: black;
+    padding-top: 0.5em;
+}
+@media screen and (min-width: 1000px) and (min-height: 480px){
+    section{
+        padding-top: 8em;
+    }
+    header{
+        top: 0;
+        background: green;
+        width: 100%;
+        height: 3em;
+        position: fixed;
+        border-bottom: green solid thick;
+        box-shadow: 0 0.2em 1em black;
+    }
+
+    header ul{
+        height: 100%;
+        display: inline-block;
+        width: 80%;
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: green;
+    }
+    header li{
+        display: inline-block;
+        height: 100%;
+        width: 15%;
+        background-color: lime;
+        border-left: green solid thin;
+        border-right: green solid thin;
+        box-shadow: 0 0 1em black;
+    }
+    header li a{
+        display: inline-block;
+        padding-top: 0.5em;
+        height: 1.5em;
+        width: 100%;
+        color: black;
+        font-size: 1.5em;
+    }
+    header li a:hover{
+        background-color: orange;
+    }
+    #quickfacts{
+        background-color: yellow;
+        width: 100%;
+        border: black solid thin;
+        font-size: 1em;
+    }
+    #pic{
+        height: 90%;
+        width: 40%;
+        display: inline;
+        float: right;
+        box-shadow: 0 0 2em black;
+    }
+    #ingredientsandoperations table{
+        height: 90%;
+        width: auto;
+        display: inline-block;
+        background-color: #ffccff;
+        border: black solid thin;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        box-shadow: 0 0 1em black;
+    }
+    img.pictureday{
+        width: 4em;
+        height: 3em;
+        display: inline;
+    }
+    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday{
+        width: 14%;
+        display: inline-block;
+        float: left;
+        text-align: left;
+        margin-top: 1em;
+        border-bottom: black thin solid;
+        border-top: black thin solid;
+        border-right: black thin solid;
+        background-color: white;
+    }
+    #days>div{
+        height: 4.1em;
+    }
+}
+a{
+    text-decoration: underline;
+    color: blue;
+}
+#signlogin{
+    background-color: #ffccff;
+    display: inline-block;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    box-shadow: 0 0 1em black;
+    border: black solid thin;
+}
+#signlogin label{
+    margin-top: 2px;
+    display: inline-block;
+}
+#signlogin input{
+    float: right;
+    margin-left: 2em;
+}
+#signlogin div{
+    clear: both;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
