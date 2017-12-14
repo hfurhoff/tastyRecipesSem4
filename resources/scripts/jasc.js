@@ -2,7 +2,7 @@ $(document).ready(function(){
     
     function CommentToAdd(){
         var self = this;
-        self.username = $('#anvnamn').text();
+        self.username;
         self.newComment = ko.observable("");
         self.submitComment = function(){
             if (self.newcomment !== ""){
@@ -10,6 +10,9 @@ $(document).ready(function(){
                 self.newComment("");
             }
         };
+        $.getJSON("getUsername.php", "arg=" + 1, function (username){
+            self.username = removeQuotes(username);
+        });
     }
     
     function Comments(commentToAdd){
@@ -54,4 +57,4 @@ $(document).ready(function(){
     var commentToAdd = new CommentToAdd();
     ko.applyBindings(commentToAdd, document.getElementById('commentformdiv'));
     ko.applyBindings(new Comments(commentToAdd), document.getElementById('comments'));
-})
+});
